@@ -1,6 +1,6 @@
 export const links = {
-  email: "youremail@example.com",
-  linkedin: "https://www.linkedin.com/in/your-handle",
-  github: "https://github.com/your-handle",
-  telegram: "https://t.me/your-handle",
+  email: "muhammadaliyu915@gmail.com",
+  linkedin: "https://ng.linkedin.com/in/muhammad-sani-aliyu-76959b240",
+  github: "https://github.com/devmskhan",
+  telegram: "https://t.me/Binatrixms",
 };
