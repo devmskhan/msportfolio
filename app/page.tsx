@@ -46,10 +46,14 @@ export default function HomePage() {
               <div className="relative inline-block">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-500 to-purple-500 p-1 bg-gradient-to-r from-blue-500 to-purple-500">
                   <img
-                    src="https://avatars.githubusercontent.com/u/71735576?v=4"
+                    src="/api/placeholder/160/160"
                     alt="MS - Web Developer & AI Engineer"
                     className="w-full h-full rounded-full object-cover bg-slate-700"
-                    
+                    onError={(e) => {
+                      // Fallback to a placeholder div if image fails to load
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'flex';
+                    }}
                   />
                   <div 
                     className="hidden w-full h-full rounded-full bg-gradient-to-br from-slate-600 to-slate-700 items-center justify-center"
@@ -64,12 +68,12 @@ export default function HomePage() {
             </motion.div>
             
             <motion.h1 
-              className="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hi, I&apos;m Muhammad Sani Aliyu
+              Hi, I'm MS
             </motion.h1>
             
             <motion.p
@@ -116,7 +120,7 @@ export default function HomePage() {
               </div>
               <div className="w-px bg-slate-600"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">5+</div>
+                <div className="text-2xl font-bold text-white">2+</div>
                 <div className="text-sm text-slate-400">Years Experience</div>
               </div>
               <div className="w-px bg-slate-600"></div>
@@ -142,7 +146,7 @@ export default function HomePage() {
                 I am a passionate Web Developer and AI Engineer who creates digital solutions that combine cutting-edge web technologies with artificial intelligence. My journey spans from crypto mining platforms to AI-driven educational apps for children.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                I believe technology should be engaging, impactful, and community-centered. Whether I'm building referral systems, training multilingual AI models, or designing intuitive interfaces, my focus is always on creating applications that are both effective and delightful to use.
+                I believe technology should be engaging, impactful, and community-centered. Whether I&apos;m building referral systems, training multilingual AI models, or designing intuitive interfaces, my focus is always on creating applications that are both effective and delightful to use.
               </p>
             </motion.div>
             
@@ -173,7 +177,7 @@ export default function HomePage() {
         </Section>
 
         {/* Projects */}
-        <Section id="projects" title="Featured Projects" subtitle="A selection of things I&apos;ve built and shipped">
+        <Section id="projects" title="Featured Projects" subtitle="A selection of things I've built and shipped">
           <div className="grid gap-8">
             {projects.map((project, index) => (
               <motion.div
@@ -270,7 +274,7 @@ export default function HomePage() {
         </Section>
 
         {/* Contact */}
-        <Section id="contact" title="Let&apos;s Work Together">
+        <Section id="contact" title="Let's Work Together">
           <motion.div
             className="max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 30 }}
