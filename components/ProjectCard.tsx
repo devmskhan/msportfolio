@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -17,7 +16,7 @@ export default function ProjectCard({
 }) {
   return (
     <motion.article 
-      className="group bg-gradient-to-br from-white/80 to-slate-50/80 dark:from-slate-800/80 dark:to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500"
+      className="relative group bg-gradient-to-br from-white/80 to-slate-50/80 dark:from-slate-800/80 dark:to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500"
       whileHover={{ y: -5 }}
     >
       <div className="flex items-start justify-between gap-6">

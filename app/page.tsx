@@ -69,7 +69,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hi, I'm Muhammad Sani Aliyu
+              Hi, I&apos;m Muhammad Sani Aliyu
             </motion.h1>
             
             <motion.p
@@ -173,7 +173,7 @@ export default function HomePage() {
         </Section>
 
         {/* Projects */}
-        <Section id="projects" title="Featured Projects" subtitle="A selection of things I've built and shipped">
+        <Section id="projects" title="Featured Projects" subtitle="A selection of things I&apos;ve built and shipped">
           <div className="grid gap-8">
             {projects.map((project, index) => (
               <motion.div
@@ -270,7 +270,7 @@ export default function HomePage() {
         </Section>
 
         {/* Contact */}
-        <Section id="contact" title="Let's Work Together">
+        <Section id="contact" title="Let&apos;s Work Together">
           <motion.div
             className="max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 30 }}
