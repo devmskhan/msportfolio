@@ -54,11 +54,23 @@ export default function ProjectCard({
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
             {desc}
           </p>
+
+          {/* ✅ Visit button */}
+          {href && (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 text-sm font-semibold rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300"
+            >
+              Visit
+            </a>
+          )}
         </div>
       </div>
       
       {stack && stack.length > 0 && (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mt-6">
           {stack.map((tech) => (
             <span 
               key={tech} 

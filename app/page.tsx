@@ -46,14 +46,10 @@ export default function HomePage() {
               <div className="relative inline-block">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-500 to-purple-500 p-1 bg-gradient-to-r from-blue-500 to-purple-500">
                   <img
-                    src="/api/placeholder/160/160"
+                    src="https://avatars.githubusercontent.com/u/71735576?v=4"
                     alt="MS - Web Developer & AI Engineer"
                     className="w-full h-full rounded-full object-cover bg-slate-700"
-                    onError={(e) => {
-                      // Fallback to a placeholder div if image fails to load
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'flex';
-                    }}
+                    
                   />
                   <div 
                     className="hidden w-full h-full rounded-full bg-gradient-to-br from-slate-600 to-slate-700 items-center justify-center"
@@ -68,12 +64,12 @@ export default function HomePage() {
             </motion.div>
             
             <motion.h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hi, I'm MS
+              Hi, I am Muhammad Sani Aliyu
             </motion.h1>
             
             <motion.p
@@ -120,7 +116,7 @@ export default function HomePage() {
               </div>
               <div className="w-px bg-slate-600"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">2+</div>
+                <div className="text-2xl font-bold text-white">5+</div>
                 <div className="text-sm text-slate-400">Years Experience</div>
               </div>
               <div className="w-px bg-slate-600"></div>
@@ -142,16 +138,16 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-lg text-slate-300 leading-relaxed">
+              <p className="text-lg text-slate-300 leading-relaxed p-2">
                 I am a passionate Web Developer and AI Engineer who creates digital solutions that combine cutting-edge web technologies with artificial intelligence. My journey spans from crypto mining platforms to AI-driven educational apps for children.
               </p>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                I believe technology should be engaging, impactful, and community-centered. Whether I&apos;m building referral systems, training multilingual AI models, or designing intuitive interfaces, my focus is always on creating applications that are both effective and delightful to use.
+              <p className="text-lg text-slate-300 leading-relaxed p-2">
+                I believe technology should be engaging, impactful, and community-centered. Whether I am building referral systems, training multilingual AI models, or designing intuitive interfaces, my focus is always on creating applications that are both effective and delightful to use.
               </p>
             </motion.div>
             
             <motion.div
-              className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/50"
+              className="p-2 bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/50"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -165,7 +161,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-blue-400" />
-                  <span className="text-slate-300">2+ Years in Development</span>
+                  <span className="text-slate-300">3+ Years in Development</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Github className="w-5 h-5 text-blue-400" />
@@ -177,8 +173,8 @@ export default function HomePage() {
         </Section>
 
         {/* Projects */}
-        <Section id="projects" title="Featured Projects" subtitle="A selection of things I've built and shipped">
-          <div className="grid gap-8">
+        <Section id="projects" title="Featured Projects" subtitle="A selection of things I have built and shipped">
+          <div className="p-2 grid gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -255,7 +251,6 @@ export default function HomePage() {
                 "Built an AI-powered multilingual kids learning platform with interactive voice conversations and storytelling features",
                 "Developed political and NGO websites featuring donation systems, membership registration, and transparency tools",
                 "Trained and fine-tuned AI language models with Hausa and other datasets for culturally inclusive solutions",
-                "Currently advancing studies in Public Health while applying tech skills to community-focused initiatives"
               ].map((achievement, index) => (
                 <motion.div
                   key={index}
@@ -274,7 +269,7 @@ export default function HomePage() {
         </Section>
 
         {/* Contact */}
-        <Section id="contact" title="Let's Work Together">
+        <Section id="contact" title="Let us Work Together">
           <motion.div
             className="max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -285,7 +280,7 @@ export default function HomePage() {
             <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/50">
               <h3 className="text-2xl font-semibold mb-4 text-white">Ready to build something amazing?</h3>
               <p className="text-lg text-slate-300 mb-8">
-                Let's discuss your next project and create something meaningful together.
+                Let us discuss your next project and create something meaningful together.
               </p>
               
               <div className="flex flex-wrap justify-center gap-4">
